@@ -178,7 +178,7 @@ function Contact() {
                   className="
                   flex
                   items-center
-                  gap-4.
+                  gap-4
                   p-4
                   rounded-xl
                   bg-white
