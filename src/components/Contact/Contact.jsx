@@ -8,31 +8,30 @@ function Contact() {
   const form = useRef();
   const [sending, setSending] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+ const sendEmail = (e) => {
+  e.preventDefault();
 
-    setSending(true);
+  setSending(true);
 
-    emailjs
-      emailjs
-       .sendForm(
-       import.meta.env.VITE_EMAIL_SERVICE_ID,
-       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-       form.current,
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_EMAIL_SERVICE_ID,
+      import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+      form.current,
       {
         publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
       }
     )
-      .then(() => {
-        alert("Message sent successfully!");
-        setSending(false);
-        form.current.reset();
-      })
-      .catch(() => {
-        alert("Failed to send message!");
-        setSending(false);
-      });
-  };
+    .then(() => {
+      alert("Message sent successfully!");
+      setSending(false);
+      form.current.reset();
+    })
+    .catch(() => {
+      alert("Failed to send message!");
+      setSending(false);
+    });
+};
 
   return (
     <Reveal>
@@ -179,7 +178,7 @@ function Contact() {
                   className="
                   flex
                   items-center
-                  gap-4
+                  gap-4.
                   p-4
                   rounded-xl
                   bg-white
