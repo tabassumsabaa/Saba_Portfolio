@@ -1,12 +1,26 @@
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
+import Experience from "../components/Experience/Experience";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Skills from "../components/Skills/Skills";
+import Certifications from "../components/Certifications/Certifications";
+import Insights from "../components/Insights/Insights";
+
 
 
 const Home = () => {
     return (
-       <section className="min-h-screen flex items-center justify-center">
-          <h1 className="text-5xl font-bold">
-            Premium Portfolio
-          </h1>
-       </section>
+        <>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Certifications />
+          <Insights/>
+          <Contact />
+        </>
     );
 };
 

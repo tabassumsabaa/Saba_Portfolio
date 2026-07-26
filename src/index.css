@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,4 +12,8 @@ html {
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+}
+
+*{
+  box-sizing:border-box;
 }
