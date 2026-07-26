@@ -14,14 +14,15 @@ function Contact() {
     setSending(true);
 
     emailjs
-      .sendForm(
-        "service_ib0c3lu",
-        "template_nuqxo8u",
-        form.current,
-        {
-          publicKey: "67zyX-Hu0qpKT8WD6",
-        }
-      )
+      emailjs
+       .sendForm(
+       import.meta.env.VITE_EMAIL_SERVICE_ID,
+       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+       form.current,
+      {
+        publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+      }
+    )
       .then(() => {
         alert("Message sent successfully!");
         setSending(false);
