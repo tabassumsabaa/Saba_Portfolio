@@ -51,8 +51,8 @@ const projects = [
       "Framer Motion",
       "JavaScript",
     ],
-    github:"#",
-    demo:"#",
+    github:"https://github.com/tabassumsabaa/Saba_Portfolio",
+    demo:"https://saba-sabiha-portfolio.vercel.app/",
     accent:
       "border-blue-300",
     button:
