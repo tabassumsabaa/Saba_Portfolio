@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Photo from "../../assets/Profile/hero_Img2.png";
+import Photo from "../../assets/Profile/hero_img2.png";
 import Reveal from "../Reveal/Reveal";
 
 
